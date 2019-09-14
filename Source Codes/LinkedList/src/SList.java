@@ -1,5 +1,5 @@
-
 /**Implementation of Singly linked list*/
+
 import java.util.Scanner;
 
 class LNode {
@@ -49,8 +49,7 @@ public class SList {
 		else if (head == tail) {
 			int x = head.info;
 			head = tail = null;
-			return x;
-
+			return x;						
 		}
 
 		else {
@@ -127,7 +126,7 @@ public class SList {
 				t = t.next;
 			}
 			if (t == null)
-				System.out.println("The entered element in not present in the List to perform a insertBefore");
+				System.out.println("The entered element in not present in the List to perform an insertBefore");
 			else {
 				temp.next = t.next;
 				t.next = temp;
@@ -250,7 +249,7 @@ public class SList {
 			System.out.println("Enter 8 to perform Insertafter an element");
 			System.out.println("Enter 9 to perform Insertbefore an element");
 			System.out.println("Enter 10 to perform DeleteAfter an element");
-			System.out.println("Enter 11 to perform DeleteAfter an element");
+			System.out.println("Enter 11 to perform DeleteBefore an element");
 			System.out.println("Enter 12 to search for a particular node");
 			System.out.println("Enter 13 to delete a particular node");
 
@@ -373,7 +372,7 @@ public class SList {
 				if (x == -1)
 					System.out.println("The Linked List is empty");
 				else if (x == -2)
-					System.out.println("Node not present in the LinkedList");
+					System.out.println("Node not present in the Linked List");
 
 				else
 					System.out.println("The Node is present at " + x + " position");
@@ -387,7 +386,7 @@ public class SList {
 				if (x == -1)
 					System.out.println("The Linked List is empty");
 				else if (x == -2)
-					System.out.println("Node not present in the LinkedList");
+					System.out.println("Node not present in the Linked List");
 
 				else
 					System.out.println(x + " has been deleted from the List");
@@ -396,7 +395,7 @@ public class SList {
 				break;
 			}
 		} while (choice >= 1 && choice <= 13);
-sc.close();
+		sc.close();
 	}
 
 }
